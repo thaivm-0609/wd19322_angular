@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common'; //sử dụng directives(ngFor/ngIf)
 import { FormsModule } from '@angular/forms'; //sử dụng [(ngModel)]
-
+import { HttpClient } from '@angular/common/http';
+import { response } from 'express';
 @Component({ //meta-data
   selector: 'app-root', //cách gọi component trong component khác
   imports: [
@@ -47,5 +48,6 @@ export class AppComponent { //khai báo biến/hàm sẽ sử dụng trong compo
       thi: 10
     }
   ]
+
 
 }
