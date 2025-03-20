@@ -225,14 +225,15 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <router-outlet />
+      
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
       <input type="text" [(ngModel)]="title">
 
       <h1 (mouseover)="countClick()">Count: {{count}}</h1>
       <button (click)="countClick()">Click</button>
-      <table>
+      <router-outlet />
+      <!-- <table>
         <thead>
           <tr>
             <th>Mã SV</th>
@@ -245,7 +246,7 @@
           </tr>
         </thead>
         <tbody>
-          <!-- @for (s of listStudents; track s.maSv) { -->
+          @for (s of listStudents; track s.maSv) {
             <tr *ngFor="let s of listStudents">
               <td>{{s.maSv}}</td>
               <td>{{s.ten}}</td>
@@ -258,9 +259,9 @@
                 <span *ngIf="s.thi >= 5">Qua</span>
               </td>
             </tr>
-          <!-- } -->
+          }
         </tbody>
-      </table>
+      </table> -->
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">

@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": 3,
+      "maSv": "PH12347",
+      "ten": "thaivm4",
+      "mail": "thaivm4@fpt.edu.vn",
+      "nganh": "Design",
+      "anh": "https://picsum.photos/200",
+      "thi": 8
+    },
+    {
+      "id": 4,
+      "maSv": "PH12349",
+      "ten": "thaivm5",
+      "mail": "thaivm5@fpt.edu.vn",
+      "nganh": "Marketing",
+      "anh": "https://picsum.photos/200",
+      "thi": 10
+    }
+  ]
+}
