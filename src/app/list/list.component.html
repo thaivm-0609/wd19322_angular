@@ -23,7 +23,12 @@
                     <td><img src="{{s.anh}}" alt=""></td>
                     <td>{{ s.thi }}</td>
                     <td>
-                        <button class="btn btn-warning">Edit</button>
+                        <button 
+                            class="btn btn-warning" 
+                            [routerLink]="['/edit',s.id]"
+                        >
+                            Edit
+                        </button>
                         <button (click)="onDelete(s.id)" class="btn btn-danger">Delete</button>
                     </td>
                 </tr>

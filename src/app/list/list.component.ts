@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router'; //gắn link, tương tự href trong thẻ a
 
 @Component({
   selector: 'app-list',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })

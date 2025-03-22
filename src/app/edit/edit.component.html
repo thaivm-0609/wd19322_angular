@@ -1,1 +1,41 @@
-<p>edit works!</p>
+<div>
+    <!-- tên form: #tenForm="ngForm" 
+     bắt sự kiện submit: (ngSubmit)="tenHam(data)"
+     data: dữ liệu ng dùng nhập vào form => tenForm.value -->
+    <form 
+        #edit="ngForm" 
+        (ngSubmit)="onEdit(edit.value)"
+        class="form-group"
+    >
+        <div>
+            <label class="form-label" for="">Mã SV</label>
+            <input class="form-control" type="text" name="maSv" [(ngModel)]="oldStudent.maSv">
+        </div>
+        <div>
+            <label class="form-label" for="">Tên</label>
+            <input class="form-control" type="text" name="ten" [(ngModel)]="oldStudent.ten">
+        </div>
+        <div>
+            <label class="form-label" for="">Email</label>
+            <input class="form-control" type="text" name="mail" [(ngModel)]="oldStudent.mail">
+        </div>
+        <div>
+            <label class="form-label" for="">Ngành</label>
+            <select class="form-control" name="nganh" [(ngModel)]="oldStudent.nganh">
+                <option value="Web">Web</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Design">Design</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label" for="">Ảnh</label>
+            <input class="form-control" type="text" name="anh" [(ngModel)]="oldStudent.anh">
+        </div>
+        <div>
+            <label class="form-label" for="">Điểm</label>
+            <input class="form-control" type="number" name="thi" [(ngModel)]="oldStudent.thi">
+        </div>
+        <button type="submit" class="btn btn-success mt-2">Chỉnh sửa</button>
+    </form>
+</div>
