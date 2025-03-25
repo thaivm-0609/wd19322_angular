@@ -1,13 +1,13 @@
 {
   "students": [
     {
-      "id": 3,
-      "maSv": "PH12347",
-      "ten": "thaivm4",
-      "mail": "thaivm4@fpt.edu.vn",
-      "nganh": "Design",
-      "anh": "https://picsum.photos/200",
-      "thi": 8
+      "maSv": "PH1111111",
+      "ten": "thaivm411111",
+      "mail": "thaivm411111@fpt.edu.vn",
+      "nganh": "Marketing",
+      "anh": "https://picsum.photos/100",
+      "thi": 10,
+      "id": 3
     },
     {
       "maSv": "PH1111",
