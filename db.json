@@ -27,5 +27,17 @@
       "thi": 10,
       "id": 5
     }
+  ],
+  "users": [
+    {
+      "email": "thaivm2@fe.edu.vn",
+      "password": "$2a$10$iD7Nbp9bayIwM9fvULQVfe.8s.mzAi9zHXJRkXp6Msmxyl2Jz3.My",
+      "id": 1
+    },
+    {
+      "email": "thaivm3@fe.edu.vn",
+      "password": "$2a$10$LzC0Tj4pnJ7sOS.VKNpiIe0sVFi/qqcJhg6ZIpAzwLT4PZhQW0Wwe",
+      "id": 2
+    }
   ]
 }

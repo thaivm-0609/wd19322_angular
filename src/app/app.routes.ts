@@ -3,6 +3,8 @@ import { ListComponent } from './list/list.component';
 import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 //PATH KHÔNG BẮT ĐẦU BẰNG DẤU /(slash)
 export const routes: Routes = [
@@ -23,7 +25,14 @@ export const routes: Routes = [
     },
     //     ]
     // },
-
+    { //đăng ký
+        path: 'register',
+        component: RegisterComponent
+    },
+    { //đăng nhập
+        path: 'login',
+        component: LoginComponent
+    },
     { //NẰM Ở CUỐI
         path: '**',
         component: NotFoundComponent
