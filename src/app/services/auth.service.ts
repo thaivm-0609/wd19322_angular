@@ -12,12 +12,12 @@ export class AuthService {
   apiUrl:string = 'http://localhost:3000'; //khai báo API url
 
   //khai báo hàm đăng ký
-  register(data:any): Observable<object> {
+  register(data:any): Observable<any> {
     return this.api.post(this.apiUrl+'/register',data);
   }
 
   //khai báo hàm đăng nhập
-  login(data:any): Observable<object> {
+  login(data:any): Observable<any> {
     return this.api.post(this.apiUrl+'/login',data);
   }
 }

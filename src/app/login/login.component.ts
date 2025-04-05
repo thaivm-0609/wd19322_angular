@@ -12,7 +12,7 @@ export class LoginComponent {
   constructor(private auth:AuthService) {}
 
   onLogin(data:any):void { //hàm onLogin khi ng dùng bấm nút submit
-    this.auth.login(data).subscribe((res:any) => {
+    this.auth.login(data).subscribe(res => {
       //B1: lấy accessToken từ res
       const token = res?.accessToken;
       //B2: lưu token vào trong localStorage
